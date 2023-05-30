@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>MacBook-Pro</title>
+    <style>
+        .line-brack{
+            /* width: 320px; */
+            height: 4px;
+            background-color: black;
+            
+        }
+        .line-brack2{
+            /* width: 100%; */
+            height: 2px;
+            background-color: rgb(93, 4, 4);  
+        }
+    </style>
+</head>
+<body>
+    <header class="flex w-3/4 mx-auto mt-14">
+        <div class="mr-20">
+            <img src="./images/mac.png" alt="">
+        </div>
+        <div>
+            <h1 class="text-4xl font-semibold">Customize your blue 24-inch iMac with apple M1 Chip.</h1>
+            <p class="mb-10">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU, and 16-core neural Engine 8GB unified memory 256GB SSD storage two Thunderbolt/USB 4 Ports Magic Mouse Magic Keyboard-US-English</p>
+
+            <strong class="text-xl">Memory</strong> <br>
+            <button id="eight-memory" class="border-2 rounded p-2 border-indigo-900 hover:bg-gray-400 text-xl">8GB unified memory</button>
+            <button id="sixteen-memory" class="border-2 rounded p-2 border-indigo-900 hover:bg-gray-400 mb-4 text-xl">16GB unified memory</button> <br>
+
+            <strong class="text-xl">Storage</strong> <br>
+            <button id="single-storage" class="border-2 rounded p-2 border-indigo-900 hover:bg-gray-400 text-xl">256GB SSD storge</button>
+            <button id="double-storage" class="border-2 rounded p-2 border-indigo-900 hover:bg-gray-400 text-xl">512GB SSD storge</button>
+            <button id="tripple-storage" class="border-2 rounded p-2 border-indigo-900 hover:bg-gray-400 mb-4 text-xl">1TB SSD storge</button> <br>
+
+            <strong class="text-xl">Choose your delivery option</strong> <br>
+            <button id="free-delivery" class="border-2 rounded p-2 border-indigo-900 hover:bg-gray-400 text-xl">Firday, Aug 25 FREE Prime Delivery</button>
+            <button id="paid-delivery" class="border-2 rounded p-2 border-indigo-900 hover:bg-gray-400 text-xl">Friday, Aug 21 Delivery Charge $20</button>
+
+            <div class="w-2/4 mt-8">
+                <strong class="mr-44 text-xl">Best Price</strong> <strong>$<span>1299</span></strong>
+                <hr class="mb-2">
+
+                <strong class="mr-28 text-xl">Extra Memory Cost</strong> <strong >$<span id="memory-cost">0</span></strong>
+                <hr class="mb-2">
+
+                <strong class="mr-28 text-xl">Extra Storage Cost</strong> <strong >$<span id="storage-cost">0</span></strong>
+                <hr class="mb-2">
+
+                <strong class="mr-36 text-xl">Delivery Charge</strong> <strong >$<span id="delivery-cost">0</span></strong>
+                <hr class="mb-2 line-brack">
+
+                <strong class="mr-36 text-xl">Total Price</strong> <strong >$<span id="total-cost">1219</span></strong>
+                <hr class="mb-2">
+                <div>
+                    <p class="font-semibold">Add Promo Code</p>
+                    <input id="input-tag" class="border-2 rounded p-2 border-indigo-900 font-semibold" type="text"> <button id="button-tag" class="font-semibold p-4 rounded border-r-emerald-950 bg-green-500 text-lg">Apply</button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <footer class=" line-brack2 text-center font-semibold text-4xl mb-10 mt-4">
+        <h2>Total $<span id="total-price">1219</span></h2>
+    </footer>
+    <script src="macbook.js"></script>
+</body>
+</html>
